@@ -1,6 +1,6 @@
 # dotfiles 🧰
 
-## Description 📝
+## Description
 
 The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
 - Scripts for installing and configuring utility programs, drivers, and applications
@@ -12,14 +12,9 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
     - Papirus icon theme
 - Alias, MIME types, and environment variables management.
 
-As the repository is feature-/application-centric, the majority of folders contains an `install.sh` that is automatically called when running the main `install.sh` script, from the repository root.
+## Folder Structure
 
-The applications and drivers folder can contain others, such as:
-- Custom aliases in `aliases.sh`
-- MIME types, that are handled by the current application, in `mimes.txt`
-- Other configuration files that are symlinked into their correct location.
-
-## Folder Structure 🗄️
+### Main Folders and Files
 
 ```
 .
@@ -42,3 +37,12 @@ The applications and drivers folder can contain others, such as:
 ├── README.md                       This file
 └── shell_creation.sh               Script executed when spawning a new shell
 ```
+
+### Application-Specific Files
+
+As the repository is feature-/application-centric, the majority of folders contains an `install.sh` that is automatically called when running the main `install.sh` script, from the repository root.
+
+The applications and drivers folder can contain others, such as:
+- Custom aliases in `aliases.sh`
+- MIME types, that are handled by the current application, in `mimes.txt`
+- Other configuration files that are symlinked into their correct location.
