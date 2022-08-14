@@ -1,6 +1,7 @@
 #!/bin/bash
 
 create_main_folders() {
+    mkdir $HOME/Documents/Inbox
     mkdir $HOME/Documents/Projects
     mkdir $HOME/Documents/Resources
     log_info "Created main folders"
