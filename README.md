@@ -35,7 +35,9 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
 |                                   when spawining
 ├── install.sh                      Script installing the whole environment
 ├── README.md                       This file
-└── shell_creation.sh               Script executed when spawning a new shell
+├── regenerate_aliases.sh           Script for regenerating the aliases based on
+|                                   the distributed aliases.txt files
+└── shell_spawning.sh               Script executed when spawning a new shell
 ```
 
 ### Application-Specific Files

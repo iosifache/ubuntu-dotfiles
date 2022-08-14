@@ -7,7 +7,7 @@ install() {
 
 }
 
-set_as_default_terminal() {
+set_as_default_terminal_emulator() {
 	update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator $(which hyper) 100
 	log_info "Added Hyper as the default terminal"
 }
@@ -19,5 +19,5 @@ sync_configuration() {
 }
 
 install
-set_as_default_terminal
+set_as_default_terminal_emulator
 sync_configuration

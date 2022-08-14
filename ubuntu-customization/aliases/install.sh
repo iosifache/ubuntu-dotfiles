@@ -8,6 +8,7 @@ build_aliases() {
 }
 
 syncronize_configuration() {
+    rm $HOME/.bash_aliases
     ln -s $HOME/Documents/Resources/dotfiles/ubuntu-customization/aliases/.bash_aliases $HOME/.bash_aliases
     log_info "Set aliases"
 }
