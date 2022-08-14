@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "GitHub Light",
+    "window.zoomLevel": -1,
+    "editor.rulers": [
+        80
+    ],
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "shellformat.flag": "-bn -s -sr -kp"
+}
