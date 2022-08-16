@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +108,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Execute the script with custom startup commands
 . $HOME/Documents/Resources/dotfiles/shell_spawning.sh
+
+# Add to $PATH
+export PATH="/home/iosifache/.local/bin:$PATH"
