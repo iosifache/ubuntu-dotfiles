@@ -11,5 +11,9 @@ enable_completion() {
     log_info "Enabled Poetry completion for oh-my-zsh"
 }
 
+sync_configuration() {
+    ln -s $HOME/Documents/Resources/dotfiles/utilities/poetry/config.toml $HOME/.config/pypoetry/config.toml
+}
+
 install
 enable_completion
