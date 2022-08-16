@@ -1,1 +1,1 @@
-alias go-codium="flatpak run com.vscodium.codium"
+alias go-codium="/snap/bin/codium"

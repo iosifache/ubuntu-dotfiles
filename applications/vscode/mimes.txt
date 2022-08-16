@@ -1,2 +1,2 @@
-text/plain=/var/lib/flatpak/exports/share/applications/com.vscodium.codium.desktop
-application/x-shellscript=>/var/lib/flatpak/exports/share/applications/com.vscodium.codium.desktop
+text/plain=/snap/bin/codium
+application/x-shellscript=/snap/bin/codium

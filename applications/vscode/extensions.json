@@ -1,8 +1,11 @@
 {
     "recommendations": [
-        "GitHub.github-vscode-theme",
-        "foxundermoon.shell-format",
-        "bierner.markdown-preview-github-styles",
-        "yzhang.markdown-all-in-one"
+        "GitHub.github-vscode-theme", // Editor theme
+        "foxundermoon.shell-format", // Shell formatting
+        "bierner.markdown-preview-github-styles", // Markdown preview enhancement
+        "yzhang.markdown-all-in-one", // Markdown utilities
+        "ms-python.python", // Python support
+        "bungcip.better-toml", // TOML support
+        "llvm-vs-code-extensions.vscode-clangd" // C support
     ]
 }
