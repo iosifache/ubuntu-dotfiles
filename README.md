@@ -9,6 +9,7 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
     - Desktop customization
     - Nautilus customization
     - Romanian language pack
+    - Fonts
     - Papirus icon theme
     - Background image
     - Profile image
