@@ -13,6 +13,11 @@ git-commit-push()  {
 
 }
 
+git-amend()  {
+    git add --all
+    git commit --amend --no-edit
+}
+
 git-amend-push()  {
     local branch=$1
 

@@ -1,3 +1,6 @@
 [user]
-name     = George-Andrei Iosif
-email     = georgeiosif@live.com
+name = George-Andrei Iosif
+email = georgeiosif@live.com
+
+[core]
+filemode = false
