@@ -1,19 +1,19 @@
 #!/bin/bash
 
-alias go-hyper="hyper"
-alias go-firefox="firefox"
-alias go-deja-dup="deja-dup"
-alias go-codium="/snap/bin/codium"
-alias dash="$HOME/Documents/Resources/Programs/dashlane"
-alias dash-note="$HOME/Documents/Resources/Programs/dashlane note"
-alias dash-pass="$HOME/Documents/Resources/Programs/dashlane password"
-alias go-inkscape="inkscape"
-alias go-virtualbox="virtualbox"
-alias go-calibre="calibre"
 alias go-obsidian="flatpak run md.obsidian.Obsidian"
-alias go-office="flatpak run com.github.micahflee.torbrowser-launcher"
 alias go-office="flatpak run org.libreoffice.LibreOffice"
+alias go-virtualbox="virtualbox"
+alias go-deja-dup="deja-dup"
+alias dash="$USER_HOME/Documents/Resources/Programs/dashlane"
+alias dash-note="$USER_HOME/Documents/Resources/Programs/dashlane note"
+alias dash-pass="$USER_HOME/Documents/Resources/Programs/dashlane password"
+alias go-hyper="hyper"
+alias go-office="flatpak run com.github.micahflee.torbrowser-launcher"
+alias go-firefox="firefox"
+alias go-calibre="calibre"
 alias go-vlc="vlc"
+alias go-codium="/snap/bin/codium"
+alias go-inkscape="inkscape"
 alias docker-container-ls="docker container ls -a"
 alias docker-container-killall="docker ps -q | xargs docker stop | xargs docker rm"
 
@@ -55,5 +55,5 @@ git-amend-push()  {
     git commit --amend --no-edit
     git push --force origin $branch
 }
+eval $(/usr/local/bin/thefuck --alias)
 alias send-to-clip="xclip -selection clipboard"
-eval $($HOME/.local/bin/thefuck --alias)

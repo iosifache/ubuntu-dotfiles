@@ -1,5 +1,5 @@
 install() {
-    pip install thefuck
+    install_through_pip thefuck
 }
 
 install

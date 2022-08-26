@@ -5,7 +5,7 @@ install() {
 }
 
 sync_configuration() {
-    ln -s $HOME/Documents/Resources/dotfiles/applications/git/.gitconfig $HOME/.gitconfig
+    ln -sf $USER_HOME/Documents/Resources/dotfiles/utilities/git/.gitconfig $USER_HOME/.gitconfig
 }
 
 install

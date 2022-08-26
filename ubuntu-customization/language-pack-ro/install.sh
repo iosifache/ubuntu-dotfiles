@@ -7,7 +7,7 @@ install() {
 }
 
 configure_as_input_source() {
-    gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ro')]"
+    execute_in_user_session gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ro')]"
     log_info "Configured Romanian language pack as an input source"
 }
 

@@ -5,6 +5,6 @@ export EDITOR="vim"
 export VISUAL="vim"
 
 # Folders aliases
-export INBOX="$HOME/Documents/Inbox"
-export PROJ="$HOME/Documents/Projects"
-export RES="$HOME/Documents/Resources"
+export INBOX="$USER_HOME/Documents/Inbox"
+export PROJ="$USER_HOME/Documents/Projects"
+export RES="$USER_HOME/Documents/Resources"

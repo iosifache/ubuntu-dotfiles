@@ -11,13 +11,13 @@ add_repository() {
 }
 
 setup_autostart() {
-    ln -s /usr/share/applications/albert.desktop $HOME/.config/autostart/
+    ln -sf /usr/share/applications/albert.desktop $USER_HOME/.config/autostart/
     log_info "Added Albert for autostart"
 }
 
 sync_configuration() {
-    rm $HOME/.config/albert
-    ln -s $HOME/Documents/Resources/dotfiles/applications/albert $HOME/.config/albert
+    rm -f $USER_HOME/.config/albert
+    ln -sf $USER_HOME/Documents/Resources/dotfiles/applications/albert $USER_HOME/.config/albert
     log_info "Synchronized Albert configuration"
 }
 

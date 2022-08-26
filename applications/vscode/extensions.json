@@ -6,6 +6,7 @@
         "yzhang.markdown-all-in-one", // Markdown utilities
         "ms-python.python", // Python support
         "bungcip.better-toml", // TOML support
-        "llvm-vs-code-extensions.vscode-clangd" // C support
+        "llvm-vs-code-extensions.vscode-clangd", // C support,
+        "franneck94.workspace-formatter" // Bulk formatter
     ]
 }

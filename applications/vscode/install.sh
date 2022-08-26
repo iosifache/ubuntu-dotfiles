@@ -8,11 +8,17 @@ set_as_default_editor() {
 }
 
 sync_configuration() {
-    rm $HOME/.config/VSCodium/User/settings.json
-    ln -s $HOME/Documents/Resources/dotfiles/applications/vscode/settings.json $HOME/.config/VSCodium/User/settings.json
+    rm -f $USER_HOME/.config/VSCodium/User/settings.json
+    ln -sf $USER_HOME/Documents/Resources/dotfiles/applications/vscode/settings.json $USER_HOME/.config/VSCodium/User/settings.json
     log_info "Synchronized VSCodium configuration"
+}
+
+install_extensions()  {
+    cat $USER_HOME/applications/vscode/extensions.json | sed 's/ *\/\/.*//' | jq .recommendations | egrep '".*"'   | tr -d ,\" | xargs  -I % sh -c 'codium --force --install-extension %'
+    log_info "Installed VSCodium extensions"
 }
 
 install
 set_as_default_editor
 sync_configuration
+install_extensions

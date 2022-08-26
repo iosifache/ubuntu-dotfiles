@@ -18,3 +18,10 @@ install_through_flatpak() {
 	flatpak install flathub -y $1
 	log_info "The package $package was installed via Flatpak."
 }
+
+install_through_pip() {
+	local package="$1"
+
+	execute_as_user pip install $package
+	log_info "The package $package was installed via pip."
+}

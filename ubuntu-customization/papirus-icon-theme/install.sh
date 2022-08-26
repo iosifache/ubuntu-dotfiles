@@ -12,7 +12,7 @@ add_repository() {
 }
 
 set_icon_theme()  {
-	gsettings set org.gnome.desktop.interface icon-theme Papirus
+	execute_in_user_session gsettings set org.gnome.desktop.interface icon-theme Papirus
 	log_info "Set Papirus as icon theme"
 }
 

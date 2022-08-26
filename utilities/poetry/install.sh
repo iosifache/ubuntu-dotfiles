@@ -6,13 +6,13 @@ install() {
 }
 
 enable_completion() {
-    mkdir $ZSH_CUSTOM/plugins/poetry
+    mkdir -p $ZSH_CUSTOM/plugins/poetry
     poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
     log_info "Enabled Poetry completion for oh-my-zsh"
 }
 
 sync_configuration() {
-    ln -s $HOME/Documents/Resources/dotfiles/utilities/poetry/config.toml $HOME/.config/pypoetry/config.toml
+    ln -sf $USER_HOME/Documents/Resources/dotfiles/utilities/poetry/config.toml $USER_HOME/.config/pypoetry/config.toml
 }
 
 install
