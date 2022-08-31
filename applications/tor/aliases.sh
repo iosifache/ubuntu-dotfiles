@@ -1,1 +1,1 @@
-alias go-office="flatpak run com.github.micahflee.torbrowser-launcher"
+alias go-tor="flatpak run com.github.micahflee.torbrowser-launcher"

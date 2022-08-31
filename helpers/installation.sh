@@ -15,7 +15,7 @@ install_through_apt() {
 install_through_flatpak() {
 	local package="$1"
 
-	flatpak install flathub -y $1
+	flatpak install flathub -y $package
 	log_info "The package $package was installed via Flatpak."
 }
 
@@ -24,4 +24,11 @@ install_through_pip() {
 
 	execute_as_user pip install $package
 	log_info "The package $package was installed via pip."
+}
+
+install_through_snap() {
+	local package="$1"
+
+	snap install $package --classic
+	log_info "The package $package was installed via Snap."
 }

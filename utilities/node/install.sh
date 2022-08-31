@@ -1,5 +1,5 @@
 install() {
-    snap install node --classic
+    install_through_snap --classic
 }
 
 install

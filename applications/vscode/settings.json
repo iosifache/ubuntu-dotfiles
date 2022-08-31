@@ -1,14 +1,17 @@
 {
-    "window.zoomLevel": -1,
-    "editor.rulers": [
-        80
-    ],
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "shellformat.flag": "-bn -s -sr -kp",
-    "git.decorations.enabled": false,
-    "workbench.colorTheme": "GitHub Light Default",
-    "clangd.path": "/home/iosifache/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd"
+  "editor.rulers": [80],
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "shellformat.flag": "-bn -s -sr -kp",
+  "git.decorations.enabled": false,
+  "workbench.colorTheme": "GitHub Light",
+  "clangd.path": "/home/iosifache/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd",
+  "window.zoomLevel": -1,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.editor.untitled.hint": "hidden"
 }

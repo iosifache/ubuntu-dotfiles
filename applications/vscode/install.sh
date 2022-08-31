@@ -1,5 +1,5 @@
 install() {
-    snap install codium --classic
+    install_through_snap codium
 }
 
 set_as_default_editor() {
