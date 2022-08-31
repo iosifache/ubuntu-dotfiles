@@ -1,1 +1,1 @@
-eval $(/usr/local/bin/thefuck --alias)
+eval $(thefuck --alias)
