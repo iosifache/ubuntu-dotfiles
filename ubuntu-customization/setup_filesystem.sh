@@ -19,7 +19,12 @@ copy_repository() {
     log_info "Copied repository"
 }
 
+sync_ssh_keys() {
+    ln -s $HOME/Documents/Resources/dotfiles/ubuntu-customization/ssh-keys $HOME/.ssh
+}
+
 create_main_folders
 sync_screenshots
+sync_ssh_keys
 copy_repository
 log_info "Set filesystem"
