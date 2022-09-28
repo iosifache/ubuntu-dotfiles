@@ -1,22 +1,21 @@
 #!/bin/bash
 
+# Import the helper functions
+source $USER_HOME/Desktop/dotfiles/helpers/loader.sh
+
 # Prepare some environment variables
 if [[ -z ${TARGET_USER}   ]]; then
+    log_error "The TARGET_USER environment variable must be set before running then script."
+
     exit
 fi
 export USER_HOME=/home/$TARGET_USER
 
-# Import the helper functions
-source $USER_HOME/Desktop/dotfiles/helpers/loader.sh
-
 # Check if the script is run as root
 check_root
 
-# Import the configuration
-import_config
-
 # Setup the file system
-source $USER_HOME/Desktop/dotfiles/ubuntu-customization/setup_filesystem.sh
+source $USER_HOME/Desktop/dotfiles/filesystem/setup.sh
 
 # Update the apt reposiories
 apt update
