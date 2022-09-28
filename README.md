@@ -2,18 +2,26 @@
 
 ## Description
 
-The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
-- Scripts for installing and configuring utility programs, drivers, and applications
-- Operating system customization, namely:
-    - Dock customization
-    - Desktop customization
-    - Nautilus customization
-    - Romanian language pack
-    - Fonts
-    - Papirus icon theme
-    - Background image
-    - Profile image
-- Alias, MIME types, and environment variables management.
+The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
+
+## How It Works
+
+1. Setting up the file system
+2. Updating the packages
+3. Installing utilities packages (for example, `curl` and `git`)
+4. Installing the drivers specific to the current host (identified by hostname)
+5. Customizing the operating system by:
+    - Gathering all aliases specific to the installed software, from `aliases.sh` files
+    - Customizing Dock
+    - Customizing Desktop
+    - Customizing Nautilus
+    - Adding a profile image
+    - Adding custom fonts
+    - Installing the Romanian language pack
+    - Gathering all MIME types specific to the installed software, from `mimes.txt` files
+    - Installing the Papirus icon theme
+6. Optimizing some aspects of the operating system
+7. Installing Desktop applications
 
 ## Folder Structure
 
@@ -25,6 +33,7 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box:
 |   └ ...                           installed applications
 ├── drivers                         Scripts for installing and customizing
 |   └ ...                           drivers
+├── filesystem                      Scripts for setting up the filesystem
 ├── helpers                         Scripts defining helper functions, imported
 |   └ ...                           and used in other scripts
 ├── ubuntu-customization            Scripts for customizing the operating
@@ -52,6 +61,13 @@ The applications and drivers folder can contain others, such as:
 - MIME types, that are handled by the current application, in `mimes.txt`
 - Other configuration files that are symlinked into their correct location.
 
+### Cheatsheet with Locations of Interest
+
+- `ubuntu-customization/fonts/fonts` for custom fonts
+- `ubuntu-customization/ssh-keys` for SSH keys
+- `*/aliases.sh` for aliases
+- `*/mime.txt` for MIME types
+
 ## Guides
 
 ### Installation
@@ -61,4 +77,6 @@ The applications and drivers folder can contain others, such as:
 
 ### Aliases Regeneration
 
-1. Run the regeneration script with `sudo TARGET_USER=<target_user> ./regenerate_aliases.sh`.
+1. Run the regeneration script with:
+    - `regenerate-aliases` if you are the target user, or
+    - `sudo TARGET_USER=<target_user> ./regenerate_aliases.sh` if you regenerate the aliases for other user.
