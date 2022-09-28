@@ -28,4 +28,4 @@ load_all_scripts ubuntu-customization
 load_all_scripts applications
 
 # Success!
-log_success "Horray! All is set up. Please don't forget to:\n    - Reboot your computer.\n    - Log in into Dropbox.\n    - Configure Deja Dup.\n    - Log in into Dashlane."
+log_success "Horray! All is set up. Please don't forget to:\n    - Reboot your computer.\n    - Log in into Dropbox.\n    - Configure Deja Dup.\n    - Log in into Dashlane.\n    - Remove the dotfiles folder from Desktop."
