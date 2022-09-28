@@ -73,7 +73,7 @@ The applications and drivers folder can contain others, such as:
 ### Installation
 
 1. Clone the repository on user's desktop.
-2. Run the installation script with `sudo TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> OBSIDIAN_KB_REPOSITORY=<obsidian_kb_repo> ./install.sh`.
+2. Run the installation script with `sudo TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> ./install.sh`.
 
 ### Aliases Regeneration
 
