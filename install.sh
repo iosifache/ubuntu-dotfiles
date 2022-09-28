@@ -22,10 +22,10 @@ apt update
 log_info "Updates apt repositories"
 
 # Run each installation script
-load_all_scripts utilities
-load_all_scripts drivers/$HOSTNAME
-load_all_scripts ubuntu-customization
-load_all_scripts applications
+execute_all_scripts_from_folder utilities
+execute_all_scripts_from_folder drivers/$HOSTNAME
+execute_all_scripts_from_folder ubuntu-customization
+execute_all_scripts_from_folder applications
 
 # Success!
 log_success "Horray! All is set up. Please don't forget to:\n    - Reboot your computer.\n    - Log in into Dropbox.\n    - Configure Deja Dup.\n    - Log in into Dashlane.\n    - Remove the dotfiles folder from Desktop."

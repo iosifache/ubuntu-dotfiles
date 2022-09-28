@@ -1,6 +1,8 @@
 #!/bin/bash
 
-load_all_scripts()  {
+source $USER_HOME/Documents/Resources/dotfiles/helpers/delegation.sh
+
+execute_all_scripts_from_folder()  {
     local folder="$1"
 
     shopt -s globstar
@@ -12,4 +14,4 @@ load_all_scripts()  {
     done
 }
 
-load_all_scripts helpers
+execute_all_scripts_from_folder helpers

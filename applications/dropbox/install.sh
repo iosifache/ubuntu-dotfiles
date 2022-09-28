@@ -8,7 +8,7 @@ install() {
 }
 
 create_shortcut() {
-    ln  -s $USER_HOME/Dropbox/ $USER_HOME/Documents/Resources/
+    ln -s $USER_HOME/Dropbox/ $USER_HOME/Documents/Resources/
     log_info  "Created shortcut for synced folder"
 }
 

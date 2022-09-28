@@ -4,13 +4,14 @@
 
 The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
 
-## How It Works
+### Stepts Involved
 
-1. Setting up the file system
-2. Updating the packages
-3. Installing utilities packages (for example, `curl` and `git`)
-4. Installing the drivers specific to the current host (identified by hostname)
-5. Customizing the operating system by:
+1. Adding the target user to the sudoers
+2. Setting up the file system
+3. Updating the packages
+4. Installing utilities packages (for example, `curl` and `git`)
+5. Installing the drivers specific to the current host (identified by hostname)
+6. Customizing the operating system by:
     - Gathering all aliases specific to the installed software, from `aliases.sh` files
     - Customizing Dock
     - Customizing Desktop
@@ -20,8 +21,9 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
     - Installing the Romanian language pack
     - Gathering all MIME types specific to the installed software, from `mimes.txt` files
     - Installing the Papirus icon theme
-6. Optimizing some aspects of the operating system
-7. Installing Desktop applications
+7. Optimizing some aspects of the operating system
+8. Installing Desktop applications
+9. Removes the target user from sudoers
 
 ## Folder Structure
 
@@ -40,16 +42,14 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
 |   └ ...                           system
 ├── utilities                       Scripts for installing and customizing
 |   └ ...                           utility programs
-├── dotfiles.conf                   Variables used when executing operations
-|                                   from this repository (for example,
-|                                   installation)
 ├── environment_variables.sh        Environment variables to be already set
 |                                   when spawining
 ├── install.sh                      Script installing the whole environment
 ├── README.md                       This file
 ├── regenerate_aliases.sh           Script for regenerating the aliases based on
 |                                   the distributed aliases.txt files
-└── shell_spawning.sh               Script executed when spawning a new shell
+├── shell_spawning.sh               Script executed when spawning a new shell
+└── sudoers.sh                      Script for manipulating sudoers
 ```
 
 ### Application-Specific Files
@@ -73,7 +73,9 @@ The applications and drivers folder can contain others, such as:
 ### Installation
 
 1. Clone the repository on user's desktop.
-2. Run the installation script with `sudo TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> ./install.sh`.
+2. Add the user to sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh add`.
+3. Run the installation script with `TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> ./install.sh`.
+4. Remove the user from sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh remove`.
 
 ### Aliases Regeneration
 
