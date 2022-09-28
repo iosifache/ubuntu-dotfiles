@@ -1,5 +1,7 @@
 {
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
@@ -13,5 +15,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.minimap.enabled": false,
-  "workbench.editor.untitled.hint": "hidden"
+  "workbench.editor.untitled.hint": "hidden",
+  "markdown.extension.toc.levels": "2..6"
 }

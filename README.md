@@ -1,5 +1,19 @@
 # dotfiles 🧰
 
+---
+
+- [Description](#description)
+  - [Stepts Involved](#stepts-involved)
+- [Folder Structure](#folder-structure)
+  - [Main Folders and Files](#main-folders-and-files)
+  - [Application-Specific Files](#application-specific-files)
+  - [Cheatsheet with Locations of Interest](#cheatsheet-with-locations-of-interest)
+- [Guides](#guides)
+  - [Installation](#installation)
+  - [Aliases Regeneration](#aliases-regeneration)
+
+---
+
 ## Description
 
 The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
