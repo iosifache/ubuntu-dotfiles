@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Prepare some environment variables
+if [[ -z ${TARGET_USER} || -z ${PROFILE_IMAGE} || -z ${OBSIDIAN_KB_REPOSITORY} ]]; then
+    exit
+fi
+export USER_HOME=/home/$TARGET_USER
+
 # Import the helper functions
 source $USER_HOME/Desktop/dotfiles/helpers/loader.sh
 

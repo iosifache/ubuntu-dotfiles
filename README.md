@@ -3,7 +3,6 @@
 ---
 
 - [Description](#description)
-  - [Stepts Involved](#stepts-involved)
 - [Folder Structure](#folder-structure)
   - [Main Folders and Files](#main-folders-and-files)
   - [Application-Specific Files](#application-specific-files)
@@ -16,34 +15,25 @@
 
 ## Description
 
-The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
+The repository contains **dotfiles** I used on my **Ubuntu 22.04 LTS** box:
 
-### Stepts Involved
-
-1. Adding the target user to the sudoers
-2. Setting up the file system
-3. Updating the packages
-4. Installing utilities packages (for example, `curl` and `git`)
-5. Installing the drivers specific to the current host (identified by hostname)
-6. Customizing the operating system by:
-    - Gathering all aliases specific to the installed software, from `aliases.sh` files
-    - Customizing Dock
-    - Customizing Desktop
-    - Customizing Nautilus
-    - Adding a profile image
-    - Adding custom fonts
-    - Installing the Romanian language pack
-    - Gathering all MIME types specific to the installed software, from `mimes.txt` files
-    - Installing the Papirus icon theme
-7. Optimizing some aspects of the operating system
-8. Installing Desktop applications
-9. Removes the target user from sudoers
+- Scripts for installing and configuring utility programs, drivers, and applications
+- Operating system customization, namely:
+    - Dock customization
+    - Desktop customization
+    - Nautilus customization
+    - Romanian language pack
+    - Fonts
+    - Papirus icon theme
+    - Background image
+    - Profile image
+- Alias, MIME types, and environment variables management.
 
 ## Folder Structure
 
 ### Main Folders and Files
 
-```
+```text
 .
 ├── applications                    Scripts for installing and customizing
 |   └ ...                           installed applications
@@ -71,6 +61,7 @@ The repository contains **dotfiles** I use on my **Ubuntu 22.04 LTS** box.
 As the repository is feature-/application-centric, the majority of folders contains an `install.sh` that is automatically called when running the main `install.sh` script, from the repository root.
 
 The applications and drivers folder can contain others, such as:
+
 - Custom aliases in `aliases.sh`
 - MIME types, that are handled by the current application, in `mimes.txt`
 - Other configuration files that are symlinked into their correct location.
@@ -87,9 +78,10 @@ The applications and drivers folder can contain others, such as:
 ### Installation
 
 1. Clone the repository on user's desktop.
-2. Add the user to sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh add`.
-3. Run the installation script with `TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> ./install.sh`.
-4. Remove the user from sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh remove`.
+2. Edit `utilities/git/.gitconfig`.
+3. Add the user to sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh add`.
+4. Run the installation script with `TARGET_USER=<target_user> PROFILE_IMAGE=<profile_image_link> ./install.sh`.
+5. Remove the user from sudoers with `sudo TARGET_USER=<target_user> ./sudoers.sh remove`.
 
 ### Aliases Regeneration
 

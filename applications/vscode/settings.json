@@ -9,8 +9,6 @@
   "shellformat.flag": "-bn -s -sr -kp",
   "git.decorations.enabled": false,
   "workbench.colorTheme": "GitHub Light",
-  "clangd.path": "/home/iosifache/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd",
-  "window.zoomLevel": -1,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

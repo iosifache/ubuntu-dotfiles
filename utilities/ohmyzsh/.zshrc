@@ -110,4 +110,4 @@ source $ZSH/oh-my-zsh.sh
 . $HOME/Documents/Resources/dotfiles/shell_spawning.sh
 
 # Add to $PATH
-export PATH="/home/iosifache/.local/bin:$PATH"
+export PATH=$HOME/.local/bin:$PATH
